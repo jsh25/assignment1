@@ -1,0 +1,135 @@
+
+//Color Variables
+$white: #fff;
+$black: #000;
+$blue-main: #3c3c80;
+$blue-secondary: #1ea8dc;
+$blue-tertiary: #8080b3;
+$light-grey: #a0a0a1;
+
+* {
+    font-family: tahoma;
+}
+
+
+header {
+    background-color:$blue-main;
+    font-family: tahoma;
+    height:auto;
+    width:auto;
+    color:$white;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+h2{
+    text-align:center;
+}
+
+body {
+    background-color: $blue-tertiary;
+}
+
+#wrapper{
+    width: 85%;
+    background-color:$white;
+    margin: 50px auto;
+    padding: 10px 20px;
+    height: auto;
+    border: 5px solid $black;
+    border-radius: 10px;
+}
+
+
+nav {
+    background-color:$white;
+    font-family: tahoma;
+    height:auto;
+    width:100%;
+    text-align:center;
+    list-style-type:none;
+    float:left;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin-bottom: 1px;
+}
+
+nav li {
+    display:inline-block;
+    margin-bottom:1%;
+    padding:25px;
+    overflow: hidden;
+    background-color:$white;
+}
+
+nav a {
+    color:$blue-main;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:visited{
+ background-color: $white;
+ color:#1ea8dc;
+}
+
+nav a:hover{
+ background-color: $blue-main;
+ color:#1ea8dc;
+}
+
+nav a:active{
+ background-color: $white;
+    color:$black;
+}
+
+ul{
+    list-style: square;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+h3{
+    background: $blue-main;
+    background: -webkit-linear-gradient(left, $blue-main, $white);
+    background: -o-linear-gradient(right, $blue-main, $white);
+    background: -moz-linear-gradient(right, $blue-main, $white);
+    background: linear-gradient(to right, $blue-main, $white);
+   color:#fff; 
+}
+
+footer {
+    background-color:$blue-main;
+    font-family: tahoma;
+    height:auto;
+    width:auto;
+    border-top: 1px solid $black;
+    text-align: right;
+    color:$white;
+    padding-right: 20px;
+    padding-bottom: 1px;
+}
+
+#page-footer a {
+    color: $blue-secondary;
+}
+
+#page-footer a:visited{
+    color: $light-grey;
+}
+
+#page-footer a:hover {
+    color: $light-grey;
+}
+
+#page-footer a:active{
+    color:$blue-tertiary;
+}

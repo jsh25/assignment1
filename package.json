@@ -1,0 +1,22 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { "compile:sass": "node-sass sass/main.scss a3stylesheet.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsh25/assignment1.git"
+  },
+  "author": "Jeremy Hackett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsh25/assignment1/issues"
+  },
+  "homepage": "https://github.com/jsh25/assignment1#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {}
+}
