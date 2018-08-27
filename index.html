@@ -1,0 +1,195 @@
+<!doctype html>
+<!-- INSTRUCTIONS: Insert the needed starting tags for an HTML page-->
+
+<html lang="en">
+    <meta charset="utf-8">
+    
+
+
+    <link rel="stylesheet" href="a3stylesheet.css">
+    
+<!-- INSTRUCTIONS: Add [First/Last Name - Fall 2015 BWM 150 - Introduction] for the title of the page -->
+<title>Jeremy Hackett - Fall 2016 BWM 150 - Introduction</title>
+    
+    
+<body>
+    <div id="wrapper">
+<!-- INSTRUCTIONS: Format the title of this page using the top level heading tag -->
+<header><h1>Understanding the Proper Way to Lay Out a Page with HTML5</h1>
+
+<!-- INSTRUCTIONS: Format the following information the next level down heading tag -->
+<h2>10/15/16
+By Jeremy Hackett</h2></header>
+
+
+<!-- INSTRUCTIONS: Add the hyperlinks to index.html(HTML5 Index), html5.html(HTML5 Example), css3.html(CSS3 Example), related.html(Related Articles) using the correct semantic tag -->
+
+<!-- Begin Navigation -->
+    <nav>
+    <ul>
+<li><a href="index.html" title="html5 index hyperlink">HTML5 Index</a></li>
+<li><a href="html5.html" title="html5 example hyperlink">HTML5 Example</a></li>
+<li><a href="css3.html" title="css example hyperlink">CSS Example</a></li>
+<li><a href="related.html" title="related articles hyperlink">Related Articles</a></li>
+        </ul>
+        </nav>
+<!-- End navigation -->
+
+
+<!-- INSTRUCTIONS: Format the each heading below (the text that is in all capital letters) using a heading 3 tag -->
+<!-- INSTRUCTIONS: Format each block of text using paragraph tags unless otherwise noted. -->
+
+    <h3>INTRODUCTION</h3>
+
+<p>A web page being rendered in the browser consists of many things - logo, informative text, pictures, hyperlinks, navigational structure and more. HTML5 offers a set of markup elements that allow you to create a structured layout for web pages. These elements are often termed as Semantic Markup because they convey their meaning and purpose clearly to the developer and to the browser. This article discusses some of the important HTML5 elements that can contribute to the layout of a web page.</p>
+
+
+    
+
+<h3>SEMANTIC MARKUP</h3>
+
+<p>Semantic markup expresses its meaning and purpose clearly to the developers and to the browser. Web developers frequently use the &lt;div&gt; element to layout their web pages. However, a &lt;div&gt; element by itself doesn't convey what it is representing in a web page. A &lt;div&gt; element may wrap a navigational menu or it may house a list of blog posts, but merely using &lt;div&gt; doesn't convey much information to the developers or to the browsers. Usually CSS classes applied to div elements reveal some information about their intended purpose. For example consider the following markup:</p>
+
+<!-- INSTRUCTIONS: Fix the code below to display as text within the page (TIP: look at the paragraph above) -->
+&lt;div class="header">...&lt;/div&gt;
+
+<p>In the above markup it is the header CSS class that gives you an idea as to what the &lt;div&gt; might be doing. In the absence of this CSS class, however, there is no way to easily identify what the &lt;div&gt; might be doing. This is because &lt;div&gt; is a general purpose element. It has no specific documented responsibility. It simply marks a division or section of the web page but doesn't dictate what can go inside that section.</p>
+
+<p>HTML5 includes a set of markup elements that overcome this difficulty. These new elements have meaningful names so that just by looking at these elements you get a clear idea about their content. These semantic elements of HTML5 are listed below (this is not an exhaustive list):</p>
+
+<!-- INSTRUCTIONS: Create an unordered list of the 6 semantic markup tags below. They should display the same way as seen below on your page. -->
+
+<!-- Start unordered list -->
+    <ul>
+<li>&lt;Header&gt;</li>
+<li>&lt;Footer&gt;</li>
+<li>&lt;Section&gt;</li>
+<li>&lt;Article&gt;</li>
+<li>&lt;Aside&gt;</li>
+<li>&lt;Nav&gt;</li>
+    </ul>
+<!-- End unordered list -->
+
+<p>As you can see, these elements are quite expressive and you can immediately get an idea of the intended purpose. The following figure shows a sample page layout designed using these elements:</p>
+
+<!-- INSTURCTIONS: Insert image figure01.png here -->
+    <figure>
+    <img class="displayed" src="images/figure01.png" title="Figure 1" alt="figure 1 image" />
+        </figure>
+
+<p>The above figure shows a typical arrangement of various elements. Note that their exact location on a page is purely dependent on the layout. For example, the &lt;aside&gt; element can be placed on the left hand side of the &lt;section&gt; or even above or below it.</p>
+
+<p>The following figure shows an actual web page making use of these elements:</p>
+
+<!-- INSTURCTIONS: Insert image figure02.png here -->
+    <figure>
+    <img class="displayed" src="images/figure02.png" title="Figure 2" alt="figure 2 image" />
+        </figure>
+
+<p>Now that you have some idea about the semantic elements, let's discuss each of the elements in more detail. For the sake of our discussion we will use the above sample web page as an example.</p>
+    
+    <h3>HEADER ELEMENT</h3>
+
+<p>The &lt;header&gt; element represents the header of the whole page or a section of it. The W3C specifications define the &lt;header&gt; element like this:</p>
+
+<p>The &lt;header&gt; element represents a group of introductory or navigational aids. A header element is intended to usually contain the section's heading, but this is not required. The header element can also be used to wrap a section's table of contents, a search form, or any relevant logos.</p>
+
+<p>The above explanation tells us that the &lt;header&gt; element can contain headings, logo images, supporting text and optionally a navigation structure. Most of the web pages have page headings in the form of logo, slogan and/or supportive text. The header element acts as a container for all these. Note that the header element can be used not only for the whole page but also for individual sections of a web page. For example, in addition to the page level header you may use the header element in the contact information section of the page.</p>
+
+<p>The following markup shows how the &lt;header&gt; element has been used in our example web page:</p>
+
+<!-- INSTURCTIONS: Insert image header.png here-->
+    <figure>
+    <img class="displayed" src="images/header.png" title="Header Example" alt="header example image" />
+        </figure>
+
+    <h3>NAV ELEMENT</h3>
+
+<p>The &lt;nav&gt; element is intended to house navigation menus or any kind of navigational structure such as hyperlinks. The W3C specifications define the &lt;nav&gt; element like this:</p>
+
+<p>The &lt;nav&gt; element represents a section with navigation links.</p>
+
+<p>The &lt;nav&gt; section can contain links to the other pages from the website or to other parts of the same web page. It is recommended that you use &lt;nav&gt; only for the main navigational structures and not for minor set of hyperlinks (such as the ones that usually go in the footer of a web page).</p>
+
+<p>The following markup shows how the &lt;nav&gt; element has been used in the example web page:</p>
+
+<!-- INSTURCTIONS: Insert image nav.png here -->
+    <figure>
+    <img class="displayed" src="images/nav.png" title="Nav Example" alt="navigation example image" />
+        </figure>
+
+<h3>SECTION ELEMENT</h3>
+
+<p>As per W3C specifications the &lt;section&gt; element represents a generic section of a document or application. The &lt;section&gt; element should not be confused with the &lt;div&gt; element. The &lt;section&gt; element is a thematic grouping of content whereas the &lt;div&gt; doesn't have any such restriction. The W3C specifications further clarifies - The section element is appropriate only if the contents would be listed explicitly in the document's outline. Some examples where a &lt;section&gt; element can be used include contact information section of a web page, announcement section of a web page and tabbed pages of a tabbed user interface. A section usually has some heading.</p>
+
+<p>The following markup shows how the &lt;section&gt; element looks:</p>
+
+<!-- INSTRUCTIONS: Insert image section.png here -->
+    <figure>
+    <img class="displayed" src="images/section.png" title="Section Example" alt="section example image" />
+        </figure>
+
+    <p>A section can also have its own &lt;header&gt; elements as well as a &lt;footer&gt; element. The section element is analogous to a section of a printed book that contains chapters or a section of a newspaper that contains news items.</p>
+
+    <div><h3>ARTICLE ELEMENT</h3></div>
+
+<p>The &lt;article&gt; element represents an independent item section of content such as a blog post, forum post or a comment. It is expected that the content in the article element should be independently distributable or reusable as in the case of content syndication.</p>
+
+<p>The following markup shows how the &lt;article&gt; element looks:</p>
+
+<!-- INSTRUCTIONS: Insert image article.png here -->
+    <figure>
+    <img class="displayed" src="images/article.png" title="Article Example" alt="article example image" />
+        </figure>
+
+<p>You will find that people sometimes use &lt;section&gt; and &lt;article&gt; together or use nested &lt;article&gt; elements. Currently there are no rigid and precise rules dictating their nesting. Whenever you use them together try to ensure that the resultant structure meets the intended purpose of the respective element as given in the W3C specifications.</p>
+
+<h3>ASIDE ELEMENT</h3>
+
+<p>The &lt;aside&gt; element is intended to house content that is related to the surrounding content but at the same time is a standalone piece of content in itself. If you take out the &lt;aside&gt; from the page it shouldn't change or alter the meaning or clarity of the main page content. Think of it as a sidebar that gives some extra, related yet standalone information about the topic being discussed. Some examples of &lt;aside&gt; include - extra information, related links and contextual advertisements. The &lt;aside&gt; element can house any type of content including textual information and images.</p>
+
+<p>For example, the &lt;aside&gt; used in the example web page looks like this:</p>
+
+<!-- INSTRUCTIONS: Insert image aside.png here -->
+    <figure>
+    <img class="displayed" src="images/aside.png" title="Aside Example" alt="aside example image" />
+        </figure>
+
+<p>As you can see the &lt;aside&gt; element shown above contains a &lt;figure&gt; element and some text in the form of a &lt;p&gt; element. The &lt;figure&gt; element is intended to represent a figure and in turn contains &lt;img&gt; and &lt;figcaption&gt; element. The &lt;img&gt; tag points to the actual image to be displayed and the &lt;figcaption&gt; element holds the figure caption.</p>
+
+    <h3>FOOTER ELEMENT</h3>
+
+<p>The &lt;footer&gt; element represents the footer of the whole page or a &lt;section&gt; element. It is intended to contain footer information such as copyright notice.</p>
+
+<p>The &lt;footer&gt; element of the example web page looks like this:</p>
+
+<!-- INSTRUCTIONS: Insert image footer.png -->
+    <figure>
+    <img class="displayed" src="images/footer.png" title="Footer Example" alt="footer example image" />
+        </figure>
+   
+<h3>SUMMARY</h3>
+
+<!-- INSTRUCTIONS: Update this paragraph so that all semantics elements render correctly on the page. -->
+<p>
+    This article covered semantic markup elements of HTML5 that can be used in the proper layout of the web pages. Unlike the &lt;div&gt; element, the semantic elements are intended to be used for a specific purpose. The elements we covered in this article include &lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt; and &lt;aside&gt;.
+        </p>
+
+<!-- INSTRUCTIONS: Use a heading element that has not yet been used for the "References:" text. --> 
+<h4>References:</h4>
+
+<!-- INSTRUCTIONS: Use the proper HTML tag for citations. -->
+    <blockquote cite="http://www.developer.com/lang/understanding-the-proper-way-to-lay-out-a-page-with-html5.html">
+<i>"Understanding the Proper Way to Lay Out a Page with HTML5." - Developer.com. N.p., n.d. Web. 10 Aug. 2014.</i></blockquote>
+
+<!-- INSTRUCTIONS: Use the lowest level heading tag. Update your name, email address, and hyperlink your email address. -->
+   
+    <footer>
+        <div id="page-footer">
+<h6>Created by: Jeremy Hackett | <a href="mailto:born2drive101@gmail.com" title="contact email hyperlink">Contact Me</a> | Copyright 2016</h6>
+        </div>
+            </footer>
+    </div>
+</body>
+    </html>
+<!-- End the HTML document with needed tags -->
