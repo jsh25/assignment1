@@ -51,20 +51,20 @@ body {
 }
 
 #wrapper{
-    width: 85%;
+    width: 816px / 960px * 100%;
     background-color:$white;
     margin: 50px auto;
     padding: 10px 20px;
     height: auto;
     border: 5px solid $black;
-    border-radius: 10px;
+    border-radius: 100px - 90px;
 }
 
 
 nav {
     background-color:$white;
     height:auto;
-    width:100%;
+    width: 960px / 960px * 100%;
     text-align:center;
     list-style-type:none;
     float:left;
@@ -76,7 +76,7 @@ nav {
     & li {
         display:inline-block;
         margin-bottom:1%;
-        padding:25px;
+        padding: 5px + 20px;
         overflow: hidden;
         background-color:$white;
     }
