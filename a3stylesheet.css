@@ -1,10 +1,12 @@
+header, footer {
+  height: auto;
+  width: auto; }
+
 * {
   font-family: tahoma; }
 
 header {
   background-color: #2c2c5d;
-  height: auto;
-  width: auto;
   color: #fff; }
 
 h1 {
@@ -73,8 +75,6 @@ h3 {
 
 footer {
   background-color: #3c3c80;
-  height: auto;
-  width: auto;
   border-top: 1px solid #000;
   text-align: right;
   color: #fff;

@@ -6,9 +6,24 @@ $blue-main: #3c3c80;
 $blue-secondary: #1ea8dc;
 $blue-tertiary: #8080b3;
 $light-grey: #a0a0a1;
+
 //Built-in Functions
 $light: lighten($blue-secondary,10%);
 $dark: darken($blue-main,10%);
+
+//Extend
+%auto-size{
+    height:auto;
+    width:auto;
+  }
+
+//Mixin
+@mixin gradient { background: $blue-main;
+background: -webkit-linear-gradient(left, $dark, $white);
+background: -o-linear-gradient(right, $dark, $white);
+background: -moz-linear-gradient(right, $dark, $white);
+background: linear-gradient(to right, $dark, $white);
+color:$white; }
 
 * {
     font-family: tahoma;
@@ -17,8 +32,7 @@ $dark: darken($blue-main,10%);
 
 header {
     background-color:$dark;
-    height:auto;
-    width:auto;
+    @extend %auto-size;
     color:$white;
 }
 
@@ -86,7 +100,7 @@ nav {
 
         &:active{
         background-color: $white;
-            color:$black;
+        color:$black;
         }
     }
 
@@ -98,21 +112,16 @@ nav {
 img.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto; 
+}
 
 h3{
-    background: $blue-main;
-    background: -webkit-linear-gradient(left, $dark, $white);
-    background: -o-linear-gradient(right, $dark, $white);
-    background: -moz-linear-gradient(right, $dark, $white);
-    background: linear-gradient(to right, $dark, $white);
-   color:$white; 
+    @include gradient;
 }
 
 footer {
     background-color:$blue-main;
-    height:auto;
-    width:auto;
+    @extend %auto-size;
     border-top: 1px solid $black;
     text-align: right;
     color:$white;
